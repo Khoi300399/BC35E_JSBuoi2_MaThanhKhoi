@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BS V4 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <input id="userName" type="text" value="cybersoft">
+    <button id="btnClick" class="btn btn-success">Click</button>
+    <hr>
+
+    <input id="numBer1" type="text" placeholder="number 1">
+    <input id="numBer2" type="text" placeholder="number 2">
+    <button id="sum" class="btn btn-danger">Cộng</button>
+    <p id="thongBao"></p>
+    <hr>
+    <button id="btnOff" class="btn btn-light">Off</button>
+    <img id="picOff" src="./assets/img/pic_bulboff.gif" alt="off">
+    <button id="btnOn" class="btn btn-warning">On</button>
+    <button id="btnDisabled" class="btn btn-danger">Disabled</button>
+    <button id="btnEnable" class="btn btn-danger">Enable</button>
+
+    <hr>
+    <div class="card w-50 mx-auto">
+        <div class="card-header bg-dark text-white">
+            <h3 class="text-center">Đăng Nhập</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="user">Tài Khoản: </label>
+                <input type="text" name="" id="user">
+            </div>
+            <div class="form-group">
+                <label for="password">Mật Khẩu: </label>
+                <input type="password" name="" id="password">
+            </div>
+        </div>
+        <div class="card-footer text-center">
+            <button id="btnDangNhap" class="btn btn-success">Đăng nhập</button> <br>
+            <span id="ketQuaDangNhap">Kết quả đăng nhập</span>
+        </div>
+
+    </div>
+
+    <hr>
+    <button id="btnTaoThe" class="btn btn-info mx-auto d-block">Tạo thẻ p</button>
+    <div id="myDiv"></div>
+
+    <hr>
+
+    <div class="card w-50 mx-auto">
+        <div class="card-header bg-dark text-white">
+            <h3 class="text-center">Lương nhân viên</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="luong1Ngay">Lương 1 ngày: </label>
+                <input type="number" name="" id="luong1Ngay">
+            </div>
+            <div class="form-group">
+                <label for="soNL">Số ngày làm: </label>
+                <input type="number" name="" id="soNL">
+            </div>
+        </div>
+        <div class="card-footer text-center">
+            <button id="btnTinhTien" class="btn btn-success">Tính tiền</button> <br>
+        </div>
+        <div id="ketQuaLuongNhanVien"></div>
+
+    </div>
+
+    <hr>
+
+    <div class="card w-50 mx-auto">
+        <div class="card-header bg-dark text-white">
+            <h3 class="text-center">Thiện nguyện</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="tenPhim">Tên phim: </label>
+                <input type="text" name="" id="tenPhim">
+            </div>
+            <div class="form-group">
+                <label for="veNgLon">Giá vé người lớn: </label>
+                <input type="text" name="" id="veNgLon">
+            </div>
+            <div class="form-group">
+                <label for="veTreEm">Giá vé trẻ em: </label>
+                <input type="text" name="" id="veTreEm">
+            </div>
+            <div class="form-group">
+                <label for="soNgLon">Số vé người lớn đã bán: </label>
+                <input type="text" name="" id="soNgLon">
+            </div>
+            <div class="form-group">
+                <label for="soTreEm">Số vé trẻ em đã bán: </label>
+                <input type="text" name="" id="soTreEm">
+            </div>
+            <select id="phanTram" class="form-control">
+                <label for="">Phần trăm từ thiện</label>
+                <option value="10">10%</option>
+                <option value="20">20%</option>
+
+            </select>
+        </div>
+        <div class="card-footer text-center">
+            <button id="btnThanhToan" class="btn btn-success">Tính tiền</button> <br>
+        </div>
+        <div id="ketQuaLuongNhanVien"></div>
+        <div id="myForm"></div>
+    </div>
+    <hr>
+    <div class="card w-50 mx-auto">
+        <div class="card-header bg-dark text-white">
+            <h3 class="text-center">Tính giá trị trung bình</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="nhapSo1">Số 1: </label>
+                <input type="number" name="" id="nhapSo1">
+            </div>
+            <div class="form-group">
+                <label for="nhapSo2">Số 2: </label>
+                <input type="number" name="" id="nhapSo2">
+            </div>
+            <div class="form-group">
+                <label for="nhapSo3">Số 3: </label>
+                <input type="number" name="" id="nhapSo3">
+            </div>
+            <div class="form-group">
+                <label for="nhapSo4">Số 4: </label>
+                <input type="number" name="" id="nhapSo4">
+            </div>
+            <div class="form-group">
+                <label for="nhapSo5">Số 5: </label>
+                <input type="number" name="" id="nhapSo5">
+            </div>
+        </div>
+        <div class="card-footer text-center">
+            <button id="btnCong" class="btn btn-success">Cộng</button> <br>
+        </div>
+        <div id="ketTrungBinh"></div>
+        <div id="boxSum"></div>
+    </div>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- BS V4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
